@@ -58,10 +58,10 @@ app.get("/", (req, res) => {
         const amount = parsedData.data.amount;
 
         if (url.includes("buy")) {
-          prices[base]["Coinbase"]["Buy"] = amount;
+          prices[base]["Coinbase"]["Buy"] = Number(amount).toFixed(2);
         }
         else {
-          prices[base]["Coinbase"]["Sell"] = amount;
+          prices[base]["Coinbase"]["Sell"] = Number(amount).toFixed(2);
         }
   	  }
   	  else {
@@ -69,12 +69,12 @@ app.get("/", (req, res) => {
         const sellPrice = parsedData.ask;
 
         if (url.includes("btc")) {
-          prices["BTC"]["Gemini"]["Buy"] = buyPrice;
-          prices["BTC"]["Gemini"]["Sell"] = sellPrice;
+          prices["BTC"]["Gemini"]["Buy"] = Number(buyPrice).toFixed(2);
+          prices["BTC"]["Gemini"]["Sell"] = Number(sellPrice).toFixed(2);
         }
         else {
-          prices["ETH"]["Gemini"]["Buy"] = buyPrice;
-          prices["ETH"]["Gemini"]["Sell"] = sellPrice;
+          prices["ETH"]["Gemini"]["Buy"] = Number(buyPrice).toFixed(2);
+          prices["ETH"]["Gemini"]["Sell"] = Number(sellPrice).toFixed(2);
         }
   	  }
   	});
