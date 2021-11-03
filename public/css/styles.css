@@ -1,0 +1,73 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+}
+
+tr {
+  background-color: #d614eb;
+  color: #ffc100;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.card-header {
+  background-color: #eb13ec;
+}
+
+.card-body {
+  background-color: #eb13ec;
+  display: block;
+  vertical-align: top;
+}
+
+.mb-2 {
+  margin: 0 !important;
+}
+
+#title {
+  background-color: #b22ed1;
+  color: #f2ce0d;
+}
+
+#prices {
+  background-color: #d614eb;
+  color: #ffc100;
+  box-sizing:border-box;
+  margin: 0;
+}
+
+#recommendations {
+  background-color: #eb14d8;
+  color: #e3c21c;
+  box-sizing:border-box;
+  margin: 0;
+}
+
+#cryptocoin-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#stock-market-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
